@@ -15,6 +15,8 @@ export const SearchResult = ({result}) => {
      const handleClick = () => {
         setIsClicked(true);
     }
+
+    // console.log(result, 'res==========');
     
     useEffect(() => {
         setIsClicked(false);
@@ -24,8 +26,8 @@ export const SearchResult = ({result}) => {
         return null;
     }
     return (
-        <Link to={`/details/${id}`} className="search-result"onClick={handleClick}>
-        {result}
+        <Link to={`/details/${result.id}`} className="search-result"onClick={handleClick}>
+        {result.nama}
         {/* <h1>{result}</h1> */}
     </Link>
     )

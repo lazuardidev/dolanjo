@@ -2,7 +2,7 @@
 // import { SearchBar } from "./SearchBar"
 import {SearchResult} from "./SearchResult"
 
-export const SearchResultList =({prop})=> {
+export const SearchResultList =({result})=> {
 
     // if (!prop) return null;
     // if (!prop || prop.length === 0) return null;
@@ -10,7 +10,6 @@ export const SearchResultList =({prop})=> {
     //     console.log('prop is either undefined or not an array:', prop);
     //     return null;
     // }
-    console.log("cek prop",prop)
     // const prop =
     return (
         <div className="results-list ">
@@ -20,7 +19,7 @@ export const SearchResultList =({prop})=> {
             <h1>a</h1>    
             <h1>a</h1>    
             <h1>a</h1> 
-            <SearchResult result={prop} />
+            <SearchResult result={result} />
             {/* {prop.map((result, id) => {
             return <SearchResult result={result.nama} key={id} />;
             })} */}
